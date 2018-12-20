@@ -481,7 +481,8 @@ div#two.quantity a{
 }
 
 #shape {
-	width: 119px;
+	width: 100px;
+	margin-bottom: 8px;
 }
 
 #w-and-g {
@@ -536,7 +537,7 @@ div#two.quantity a{
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
 	margin-top: 2%;
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid #b0b3b3;
 }
 
 #link-grid {
