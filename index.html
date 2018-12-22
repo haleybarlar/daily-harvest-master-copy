@@ -1,53 +1,61 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kalam:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="prototype.css">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Staatliches" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="icon" href="https://d1qb2nb5cznatu.cloudfront.net/startups/i/720943-f92aa9fedd0545d2af860f1107c52256-medium_jpg.jpg?buster=1532442563">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Daily Harvest | Organic, Farm-Frozen Recipes Delivered Weekly or Monthly</title>
   </head>
+
   <body>
     <header>
       <div id="navbar">
         <div id="header-left" class="nav-inline">
-          <a href="#browse" class="header">Browse</a>
-          <div class="arrow-down header"></div>
-          <a href="#cookies" class="header" id="cookie">Cookies</a>
-          <a href="#who" class="header">Who We Are</a>
-          <a href="#gift" class="header">Gift</a>
+          <a href="#browse" class="header nav-item">Browse</a>
+          <div class="arrow-down header nav-item"></div>
+          <a href="#cookies" class="header nav-item" id="cookie">Cookies</a>
+          <a href="#who" class="header nav-item">Who We Are</a>
+          <a href="#gift" class="header nav-item">Gift</a>
         </div>
         <h1 class="nav-inline" id="logo-h1">DAILY HARVEST</h1>
         <div id="header-right" class="nav-inline">
-          <a href="#help" class="header">Help</a>
-          <a href="#start" id="start" class="header">Get Started</a>
-          <a href="#login" class="header">Log In</a>
+          <a href="#help" class="header nav-item">Help</a>
+          <a href="#start" id="start" class="header nav-item">Get Started</a>
+          <a href="#login" class="header nav-item">Log In</a>
+        </div>
+
+        <div class="hamburger">
+          <div class='burger-line'></div>
+          <div class='burger-line'></div>
+          <div class='burger-line'></div>
         </div>
       </div>
     </header>
 
     <div class="main">
-      <img id="main-img" src="./images/dhh.png" />
-      <h1 id="main-img-h1">SUPERFOODS. SUPER FAST.</h1>
-      <p>Get superfood eats delivered to your door, frozen and ready to enjoy on your schedule.</p>
-      <button><div id="go">Get Started <i class="arrow right"></i></div></button>
+      <img id="main-img" src="./images/dh3.jpg" />
+      <div class="main-grid">
+        <i class="large material-icons" id="arrow-left">chevron_left</i>
+        <div id="middle-column">
+          <i class="large material-icons" id="play">play_circle_filled</i>
+          <h1 id="main-img-h1">SUPERFOODS. SUPER FAST.</h1>
+          <p>Get superfood eats delivered to your door, frozen and ready to enjoy on your schedule.</p>
+          <button><div id="go"><span>Get Started</span><i class="large material-icons" id="go-arrow">trending_flat</i></div></button>
+          <div class="bubbles">
+            <i class="large material-icons">radio_button_checked</i>
+            <i class="large material-icons">radio_button_unchecked</i>
+            <i class="large material-icons">radio_button_unchecked</i>
+            <i class="large material-icons">radio_button_unchecked</i>
+          </div>
+        </div>
+        <i class="large material-icons" id="arrow-right">chevron_right</i>
+      </div>
     </div>
-
-    <div class="arrow-right"></div>
-    <a href="#" class="circle"></a>
-    <a href="#"><i id="move-arrow" class="arrow right"></i></a>
-    <a href="#"><i id="move-arrow" class="arrow left"></i></a>
-
-    <div class="bubbles">
-      <div class="bubble"><div class="solid-bubble"></div></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-    </div>
-
-
 
     <div class="wrapper">
       <div class="grid-column">
@@ -71,27 +79,31 @@
 
     <div id="pick-your">
       <h1>PICK YOUR PLAN</h1>
-      <h3>Healthy just got easy! No commitment. Flexible frequency. Skip or cancel anytime.</h3>
+      <p>Healthy just got easy! No commitment. Flexible frequency. Skip or cancel anytime.</p>
     </div>
 
     <div class="plan-grid">
-      <div>
-        <h1>WEEKLY</h1>
-        <img src="https://www.daily-harvest.com/static/img/lifestyle/woman-with-spoon.png" />
-        <p>MOST POPULAR</p>
-        <i class="arrow down"></i>
-
-        <div class="quantity">
-          <a href="#6">6</a>
-          <a href="#9" id="clicked">9</a>
-          <a href="#12">12</a>
-          <a href="#24">24</a>
+      <div id="weekly">
+        <div class="titles">
+          <h1 id="selected">WEEKLY</h1>
+          <h1>MONTHLY</h1>
         </div>
-        <h3>$7.75 per cup</h3>
+        <div class="block">
+          <img src="https://www.daily-harvest.com/static/img/lifestyle/woman-with-spoon.png" />
+          <p>MOST POPULAR</p>
+          <i class="material-icons">keyboard_arrow_down</i>
+          <div class="quantity">
+            <a href="#6">6</a>
+            <a href="#9" id="clicked">9</a>
+            <a href="#12">12</a>
+            <a href="#24">24</a>
+          </div>
+          <h3>$7.75 per cup</h3>
+        </div>
         <button>Select Weekly Plan</button>
       </div>
       <div class="divider"></div>
-      <div>
+      <div id="big-show">
         <h1>MONTHLY</h1>
         <img src="https://www.daily-harvest.com/static/img/lifestyle/bicycle.png" />
         <div class="quantity" id="two">
@@ -104,7 +116,7 @@
       </div>
     </div>
 
-    <img src="./images/pattern.jpg" id="pattern" />
+    <img src="./images/pattern.jpg" id="border2" />
 
     <div id="top-picks">
       <h1>OUR TOP PICKS</h1>
@@ -151,7 +163,7 @@
       </div>
     </div>
 
-    <img src="./images/black-and-white-speckle-plain.jpg" id="two"/>
+    <img src="./images/black-and-white-speckle-plain.jpg" id="border3"/>
 
     <div class="last">
       <h1>#FREEZERGOALS</h1>
@@ -163,6 +175,7 @@
       </div>
     </div>
 
+    <div id="grey">
     <div id="link-grid">
       <div class="grid-block">
         <p>browse</p>
@@ -194,6 +207,7 @@
         <a href="#">Instagram</a>
       </div>
     </div>
+  </div>
 
     <footer>
       <div id="footer-links">
