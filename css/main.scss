@@ -16,7 +16,7 @@ body {
 
 img {
   width: 100%;
-  height: 25rem;
+  height: auto;
 }
 
 header {
@@ -48,7 +48,7 @@ header {
     margin-top: -3.0rem;
     border: 1px solid #c9cfcf;
     display: inline-block;
-    margin-left: 84%;
+    margin-left: 87%;
     padding: 0.6rem 0.9rem;
     border-radius: 3px;
 
@@ -64,6 +64,11 @@ header {
 
 div.main {
   margin-top: 5.5rem;
+
+  img {
+    width: 100%;
+    height: 25rem;
+  }
 
   .main-grid {
     position: absolute;
@@ -93,6 +98,7 @@ div.main {
 
     #middle-column {
       text-align: center;
+      margin: 0 auto;
     }
 
     #main-img-h1 {
@@ -101,6 +107,7 @@ div.main {
       line-height: 4.1rem;
       font-family: "Francois One";
       letter-spacing: 0.1rem;
+      padding: 0 4%;
     }
 
     p {
@@ -108,6 +115,8 @@ div.main {
       font-size: 13px;
       line-height: 2rem;
       font-weight: 300;
+      width: 346px;
+      margin: 0 auto;
     }
 
     button {
@@ -130,11 +139,6 @@ div.main {
         margin-top: -1.5rem;
         margin-left: 8rem;
         font-size: 3rem;
-      }
-
-      button :hover {
-        background: white;
-        color: black;
       }
     }
 
@@ -201,6 +205,7 @@ div.main {
     margin-top: 4rem;
 
     .titles {
+      margin-left: -.3rem;
     }
 
     h1 {
@@ -223,6 +228,7 @@ div.main {
     border: 1px solid black;
     width: 33.6rem;
     margin-left: 2.1rem;
+    margin: 0 auto;
 
     img {
       width: auto;
@@ -297,10 +303,9 @@ img#border2 {
   p {
     font-size: 1.3rem;
     line-height: 2rem;
-    width: 33rem;
+    width: 60%;
     text-align: center;
-    margin-right: 8rem;
-    margin-left: 2rem;
+    margin: 0 auto;
     margin-top: 1rem;
     font-weight: 300;
   }
@@ -311,9 +316,10 @@ img#border2 {
   margin-top: 2rem;
 
   img {
-    width: 34.5rem;
+    width: 100%;
     height: auto;
     margin-top: 2rem;
+    padding: 0 4%;
   }
 
   h1 {
@@ -341,8 +347,7 @@ h1#talking {
 
 .shoutout {
   text-align: center;
-  width: 34rem;
-  margin-left: 2rem;
+  margin: 0 auto;
 
   img {
     width: 13rem;
@@ -360,6 +365,7 @@ h1#talking {
     line-height: 2rem;
     font-weight: 300;
     margin-top: 5.5rem;
+    padding: 3%;
   }
 }
 
@@ -386,7 +392,7 @@ img#border3 {
     border-bottom: 1px solid #b0b3b3;
 
     img {
-      width: 19rem;
+      width: 100%;
       height: auto;
     }
   }
@@ -439,5 +445,349 @@ footer {
     font-weight: 600;
     text-decoration: none;
     padding: 0.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+
+  div.main {
+    div.main-grid {
+      margin-top: -42rem;
+
+      #arrow-left {
+        margin-top: 14rem;
+        font-size: 3.5rem;
+        margin-left: 1.5rem;
+      }
+
+      #arrow-right {
+        margin-top: 14rem;
+        font-size: 3.5rem;
+        margin-right: 1.1rem;
+      }
+    }
+
+    #main-img {
+      height: 44.5rem;
+      width: 100%;
+    }
+
+    #middle-column {
+      p {
+        margin-top: 2rem;
+        width: 56rem;
+      }
+
+      #play {
+        position: absolute;
+        font-size: 10rem;
+        margin-top: 9.7rem;
+        margin-left: -5rem;
+      }
+
+      #main-img-h1 {
+        margin-top: 0rem;
+      }
+
+      button {
+        margin-top: 22.5rem;
+      }
+
+      .bubbles {
+        margin-top: -7rem;
+      }
+    }
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 6rem;
+    background: white;
+    margin-left: -5rem;
+    margin-top: -1rem;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      width: 17rem;
+      margin: 0 auto;
+      margin-top: 1rem;
+      line-height: 2rem;
+    }
+  }
+
+  .plan-grid {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    padding: 4rem;
+    margin-top: 0.5rem;
+
+    button {
+      padding: 1.5rem 8.8rem;
+      margin-top: 1rem;
+    }
+
+    .divider {
+    	width: 1px;
+      margin: 0 auto;
+    	background: #c9cfcf;
+    	height: 575px;
+    	margin-top: 0%;
+      height: 593px;
+    }
+
+    #weekly {
+      margin-top: 0rem;
+      margin: 0 auto;
+
+      .block {
+        margin: 0 auto;
+
+        .quantity {
+          margin-left: -1rem;
+
+          a {
+            padding: 0.5rem 3rem;
+          }
+        }
+
+        img {
+          width: auto;
+          height: 26rem;
+          margin-top: .5rem;
+          margin-right: 2rem;
+        }
+      }
+
+      .titles {
+        h1#maybe-show {
+          display: none;
+        }
+        h1#selected {
+          color: black;
+          background: white;
+          border: none;
+          font-size: 2rem;
+          font-weight: 600;
+          padding: 0;
+          font-size: 2.3rem;
+        }
+      }
+
+      .block {
+        border: none;
+      }
+    }
+
+    #big-show {
+      display: block;
+
+      h1 {
+        font-size: 2.3rem;
+      }
+
+      img {
+        height: 26rem;
+        width: auto;
+        margin-top: .5rem;
+        margin-left: -1rem;
+      }
+
+      button {
+        margin-top: 3.3rem;
+      }
+    }
+
+    #two {
+      margin-top: 4.6rem;
+
+      a {
+        font-size: 2.2rem;
+        font-weight: 600;
+        border: 1px solid black;
+        background: black;
+        color: white;
+        padding: 0.5rem 3rem;
+      }
+    }
+
+    h3 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-top: 3rem;
+    }
+
+    .divider {
+      height: 593px;
+    }
+  }
+
+  img#border2 {
+    margin-top: -4rem;
+  }
+
+  #top-picks {
+    h1 {
+      margin-top: 5rem;
+    }
+
+    p {
+      margin: 0 auto;
+      width: 43rem;
+      margin-top: 1rem;
+      line-height: 2rem;
+    }
+  }
+
+  #food {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 3%;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: auto;
+      padding: 0;
+    }
+
+    a {
+      font-size: 1.3rem;
+    }
+  }
+
+  .shoutout {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 4rem;
+    margin-top: 4rem;
+    justify-content: center;
+
+    img {
+      width: auto;
+      height: 4rem;
+      margin-top: 0rem;
+    }
+
+    img#w-and-g {
+      width: auto;
+      height: 4rem;
+    }
+
+    p {
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 4rem;
+    }
+
+    div {
+      margin: 0 auto;
+    }
+  }
+
+  .last {
+    #last-grid {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+  }
+
+  #grey {
+    height: 33.5rem;
+
+    #link-grid {
+      grid-template-columns: 25% 25% 25% 25%;
+    }
+  }
+
+  footer {
+    height: 11rem;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    #navbar {
+      padding: 0 1.5rem;
+
+      h1 {
+        padding-top: 0;
+        display: inline;
+        position: absolute;
+        font-size: 2.1rem;
+        margin-top: 1rem;
+        width: 100%;
+        text-align: center;
+        margin-left: -37rem;
+      }
+
+      .hamburger {
+        display: none;
+      }
+
+      .header.nav-item {
+        display: inline-block;
+        text-decoration: none;
+      }
+      #header-left {
+        display: inline;
+
+        a {
+          float: left;
+          display: block;
+          text-align: center;
+          padding: 14px 17.5px;
+          color: black;
+          font-size: 1.4rem;
+          font-weight: 500;
+          margin-top: 0.2rem;
+        }
+
+        a:hover {
+          color: #606161;
+        }
+
+        i {
+          position: absolute;
+          margin-top: 1.4%;
+          font-size: 2rem;
+          margin-left: 0rem;
+          margin-top: 0rem;
+        }
+      }
+      #header-right {
+        display: inline;
+
+        a {
+          float: right;
+          display: block;
+          text-align: center;
+          padding: 14px 17.5px;
+          text-decoration: none;
+          color: black;
+          font-size: 1.4rem;
+          font-weight: 500;
+          margin-top: 0.2rem;
+        }
+
+        a:hover {
+          color: #606161;
+        }
+
+        #start {
+          padding: 9px 13.5px;
+          padding-bottom: 12px;
+          background: black;
+          color: white;
+          margin-top: 0.6rem;
+        }
+      }
+    }
+  }
+
+  #food {
+    padding: 0 2rem;
   }
 }

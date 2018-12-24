@@ -12,7 +12,7 @@ body {
 
 img {
   width: 100%;
-  height: 25rem; }
+  height: auto; }
 
 header .nav-item {
   display: none; }
@@ -36,7 +36,7 @@ header .hamburger {
   margin-top: -3.0rem;
   border: 1px solid #c9cfcf;
   display: inline-block;
-  margin-left: 84%;
+  margin-left: 87%;
   padding: 0.6rem 0.9rem;
   border-radius: 3px; }
   header .hamburger .burger-line {
@@ -48,6 +48,9 @@ header .hamburger {
 
 div.main {
   margin-top: 5.5rem; }
+  div.main img {
+    width: 100%;
+    height: 25rem; }
   div.main .main-grid {
     position: absolute;
     display: grid;
@@ -66,18 +69,22 @@ div.main {
     div.main .main-grid #arrow-left {
       margin-top: 3.5rem; }
     div.main .main-grid #middle-column {
-      text-align: center; }
+      text-align: center;
+      margin: 0 auto; }
     div.main .main-grid #main-img-h1 {
       font-size: 3.6rem;
       margin-top: 12.5rem;
       line-height: 4.1rem;
       font-family: "Francois One";
-      letter-spacing: 0.1rem; }
+      letter-spacing: 0.1rem;
+      padding: 0 4%; }
     div.main .main-grid p {
       margin-top: 1.7rem;
       font-size: 13px;
       line-height: 2rem;
-      font-weight: 300; }
+      font-weight: 300;
+      width: 346px;
+      margin: 0 auto; }
     div.main .main-grid button {
       background: black;
       color: white;
@@ -95,9 +102,6 @@ div.main {
         margin-top: -1.5rem;
         margin-left: 8rem;
         font-size: 3rem; }
-      div.main .main-grid button button :hover {
-        background: white;
-        color: black; }
     div.main .main-grid .bubbles i {
       font-size: 2rem;
       margin-top: 10rem; }
@@ -140,6 +144,8 @@ div.main {
     display: none; }
   .plan-grid #weekly {
     margin-top: 4rem; }
+    .plan-grid #weekly .titles {
+      margin-left: -.3rem; }
     .plan-grid #weekly h1 {
       font-size: 1.7rem;
       letter-spacing: 0.1rem;
@@ -154,7 +160,8 @@ div.main {
   .plan-grid .block {
     border: 1px solid black;
     width: 33.6rem;
-    margin-left: 2.1rem; }
+    margin-left: 2.1rem;
+    margin: 0 auto; }
     .plan-grid .block img {
       width: auto;
       height: 20rem;
@@ -208,10 +215,9 @@ img#border2 {
   #top-picks p {
     font-size: 1.3rem;
     line-height: 2rem;
-    width: 33rem;
+    width: 60%;
     text-align: center;
-    margin-right: 8rem;
-    margin-left: 2rem;
+    margin: 0 auto;
     margin-top: 1rem;
     font-weight: 300; }
 
@@ -219,9 +225,10 @@ img#border2 {
   text-align: center;
   margin-top: 2rem; }
   #food img {
-    width: 34.5rem;
+    width: 100%;
     height: auto;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    padding: 0 4%; }
   #food h1 {
     margin-top: 0.5rem;
     font-size: 1.4rem; }
@@ -240,8 +247,7 @@ h1#talking {
 
 .shoutout {
   text-align: center;
-  width: 34rem;
-  margin-left: 2rem; }
+  margin: 0 auto; }
   .shoutout img {
     width: 13rem;
     height: auto;
@@ -253,7 +259,8 @@ h1#talking {
     font-size: 1.3rem;
     line-height: 2rem;
     font-weight: 300;
-    margin-top: 5.5rem; }
+    margin-top: 5.5rem;
+    padding: 3%; }
 
 img#border3 {
   margin-top: 12rem;
@@ -273,7 +280,7 @@ img#border3 {
     grid-template-columns: 50% 50%;
     border-bottom: 1px solid #b0b3b3; }
     .last #last-grid img {
-      width: 19rem;
+      width: 100%;
       height: auto; }
 
 #grey {
@@ -312,5 +319,230 @@ footer {
     font-weight: 600;
     text-decoration: none;
     padding: 0.4rem; }
+
+@media (min-width: 768px) {
+  div.main div.main-grid {
+    margin-top: -42rem; }
+    div.main div.main-grid #arrow-left {
+      margin-top: 14rem;
+      font-size: 3.5rem;
+      margin-left: 1.5rem; }
+    div.main div.main-grid #arrow-right {
+      margin-top: 14rem;
+      font-size: 3.5rem;
+      margin-right: 1.1rem; }
+  div.main #main-img {
+    height: 44.5rem;
+    width: 100%; }
+  div.main #middle-column p {
+    margin-top: 2rem;
+    width: 56rem; }
+  div.main #middle-column #play {
+    position: absolute;
+    font-size: 10rem;
+    margin-top: 9.7rem;
+    margin-left: -5rem; }
+  div.main #middle-column #main-img-h1 {
+    margin-top: 0rem; }
+  div.main #middle-column button {
+    margin-top: 22.5rem; }
+  div.main #middle-column .bubbles {
+    margin-top: -7rem; }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 6rem;
+    background: white;
+    margin-left: -5rem;
+    margin-top: -1rem; }
+    .wrapper h1 {
+      font-size: 1.8rem; }
+    .wrapper p {
+      width: 17rem;
+      margin: 0 auto;
+      margin-top: 1rem;
+      line-height: 2rem; }
+
+  .plan-grid {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    padding: 4rem;
+    margin-top: 0.5rem; }
+    .plan-grid button {
+      padding: 1.5rem 8.8rem;
+      margin-top: 1rem; }
+    .plan-grid .divider {
+      width: 1px;
+      margin: 0 auto;
+      background: #c9cfcf;
+      height: 575px;
+      margin-top: 0%;
+      height: 593px; }
+    .plan-grid #weekly {
+      margin-top: 0rem;
+      margin: 0 auto; }
+      .plan-grid #weekly .block {
+        margin: 0 auto; }
+        .plan-grid #weekly .block .quantity {
+          margin-left: -1rem; }
+          .plan-grid #weekly .block .quantity a {
+            padding: 0.5rem 3rem; }
+        .plan-grid #weekly .block img {
+          width: auto;
+          height: 26rem;
+          margin-top: .5rem;
+          margin-right: 2rem; }
+      .plan-grid #weekly .titles h1#maybe-show {
+        display: none; }
+      .plan-grid #weekly .titles h1#selected {
+        color: black;
+        background: white;
+        border: none;
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 0;
+        font-size: 2.3rem; }
+      .plan-grid #weekly .block {
+        border: none; }
+    .plan-grid #big-show {
+      display: block; }
+      .plan-grid #big-show h1 {
+        font-size: 2.3rem; }
+      .plan-grid #big-show img {
+        height: 26rem;
+        width: auto;
+        margin-top: .5rem;
+        margin-left: -1rem; }
+      .plan-grid #big-show button {
+        margin-top: 3.3rem; }
+    .plan-grid #two {
+      margin-top: 4.6rem; }
+      .plan-grid #two a {
+        font-size: 2.2rem;
+        font-weight: 600;
+        border: 1px solid black;
+        background: black;
+        color: white;
+        padding: 0.5rem 3rem; }
+    .plan-grid h3 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-top: 3rem; }
+    .plan-grid .divider {
+      height: 593px; }
+
+  img#border2 {
+    margin-top: -4rem; }
+
+  #top-picks h1 {
+    margin-top: 5rem; }
+  #top-picks p {
+    margin: 0 auto;
+    width: 43rem;
+    margin-top: 1rem;
+    line-height: 2rem; }
+
+  #food {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 3%;
+    justify-content: center; }
+    #food img {
+      width: 100%;
+      height: auto;
+      padding: 0; }
+    #food a {
+      font-size: 1.3rem; }
+
+  .shoutout {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 4rem;
+    margin-top: 4rem;
+    justify-content: center; }
+    .shoutout img {
+      width: auto;
+      height: 4rem;
+      margin-top: 0rem; }
+    .shoutout img#w-and-g {
+      width: auto;
+      height: 4rem; }
+    .shoutout p {
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 4rem; }
+    .shoutout div {
+      margin: 0 auto; }
+
+  .last #last-grid {
+    grid-template-columns: 25% 25% 25% 25%; }
+
+  #grey {
+    height: 33.5rem; }
+    #grey #link-grid {
+      grid-template-columns: 25% 25% 25% 25%; }
+
+  footer {
+    height: 11rem; } }
+@media (min-width: 992px) {
+  header #navbar {
+    padding: 0 1.5rem; }
+    header #navbar h1 {
+      padding-top: 0;
+      display: inline;
+      position: absolute;
+      font-size: 2.1rem;
+      margin-top: 1rem;
+      width: 100%;
+      text-align: center;
+      margin-left: -37rem; }
+    header #navbar .hamburger {
+      display: none; }
+    header #navbar .header.nav-item {
+      display: inline-block;
+      text-decoration: none; }
+    header #navbar #header-left {
+      display: inline; }
+      header #navbar #header-left a {
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px 17.5px;
+        color: black;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-top: 0.2rem; }
+      header #navbar #header-left a:hover {
+        color: #606161; }
+      header #navbar #header-left i {
+        position: absolute;
+        margin-top: 1.4%;
+        font-size: 2rem;
+        margin-left: 0rem;
+        margin-top: 0rem; }
+    header #navbar #header-right {
+      display: inline; }
+      header #navbar #header-right a {
+        float: right;
+        display: block;
+        text-align: center;
+        padding: 14px 17.5px;
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-top: 0.2rem; }
+      header #navbar #header-right a:hover {
+        color: #606161; }
+      header #navbar #header-right #start {
+        padding: 9px 13.5px;
+        padding-bottom: 12px;
+        background: black;
+        color: white;
+        margin-top: 0.6rem; }
+
+  #food {
+    padding: 0 2rem; } }
 
 /*# sourceMappingURL=main.css.map */
